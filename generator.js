@@ -98,6 +98,7 @@ function copyPasswordOne() {
     passwordContainerOne.setSelectionRange(0, 99999)
 
     navigator.clipboard.writeText(passwordContainerOne.value)
+    passwordContainerOne.blur()
     alert("Copied the text: " + passwordContainerOne.value)
 }
 
@@ -106,5 +107,6 @@ function copyPasswordTwo() {
     passwordContainerTwo.setSelectionRange(0, 99999)
 
     navigator.clipboard.writeText(passwordContainerTwo.value)
+    passwordContainerTwo.blur()
     alert("Copied the text: " + passwordContainerTwo.value)
 }
