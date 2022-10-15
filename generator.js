@@ -49,6 +49,15 @@ function generatePassword() {
             } else {
                 testPassed = true
             }
+        } else if (allowNumbers.checked === false && allowSymbols.checked === false) {
+            if (isLetter(testingNumberOne) === false || isLetter(testingNumberTwo) === false) {
+                i--
+                testingNumberOne = ""
+                testingNumberTwo = ""
+                testPassed = false
+            } else {
+                testPassed = true
+            }
         }
 
         if (testPassed === true) {
