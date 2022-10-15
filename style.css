@@ -311,6 +311,7 @@ input[type="checkbox"]:checked {
     }
     .controls--line {
         width: 22rem;
+        margin-bottom: 1.2rem;
     }
     .controls--slider {
         width: 20rem;
@@ -329,6 +330,7 @@ input[type="checkbox"]:checked {
         width: 100%;
     }
     .controls--input {
+        margin-top: 1.2rem;
         width: 22rem;
         margin: 0;
     }
