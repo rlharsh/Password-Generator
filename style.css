@@ -294,7 +294,7 @@ input[type="checkbox"]:checked {
 	padding-top: 1.4rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     body {
         margin: none;
         padding: none;
@@ -310,10 +310,10 @@ input[type="checkbox"]:checked {
         padding-top: 2.18rem;
     }
     .controls--line {
-        width: 24rem;
+        width: 22rem;
     }
     .controls--slider {
-        width: 22rem;
+        width: 20rem;
     }
     .output-container {
         flex-direction: column;
@@ -329,7 +329,7 @@ input[type="checkbox"]:checked {
         width: 100%;
     }
     .controls--input {
-        width: 24rem;
+        width: 22rem;
         margin: 0;
     }
     .controls--button-input {
