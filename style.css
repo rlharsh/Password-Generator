@@ -1,24 +1,25 @@
 /* Root Variables */
 :root {
-    --background-color: #1C1C1C;
-    --background-color-container-dark: #1F2937;
+	--background-color: #1C1C1C;
+	--background-color-container-dark: #1F2937;
 
-    --header-color-dark-mode: #fff;
+	--header-color-dark-mode: #fff;
 
-    --color-medium-grey: #D5D4D8;
-    --color-cta: #4ADF86;
-    --color-button: #10B981;
+	--color-medium-grey: #D5D4D8;
+	--color-cta: #4ADF86;
+	--color-button: #10B981;
 }
 
 /* CSS RESET */
 /* Box sizing rules */
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -32,30 +33,30 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+	margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
-  list-style: none;
+	list-style: none;
 }
 
 /* Set core root defaults */
 html:focus-within {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+	text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
-  display: block;
+	max-width: 100%;
+	display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -63,227 +64,232 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }
+
 /* END CSS RESET */
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    background-color: var(--background-color);
-    font-family: 'Karla', sans-serif;
+	background-color: var(--background-color);
+	font-family: 'Karla', sans-serif;
 }
 
 .container {
-    background-color: var(--background-color-container-dark);
-    width: 34.38rem;
-    height: auto;
-    margin: auto;
-    margin-top: 1.2rem;
-    position: relative;
-    padding-left: 2em;
-    margin-bottom: 1.2rem;
+	background-color: var(--background-color-container-dark);
+	width: 34.38rem;
+	height: auto;
+	margin: auto;
+	margin-top: 1.2rem;
+	position: relative;
+	padding-left: 2em;
+	margin-bottom: 1.2rem;
 }
 
 .container--header {
-    width: 22rem;
+	width: 22rem;
 }
 
 .container--h1 {
-    color: var(--header-color-dark-mode);
-    padding-top: 7.18rem;
-    font-size: 2.2rem;
-    letter-spacing: -0.025em;
-    line-height: 1em;
-    letter-spacing: -0.19;
+	color: var(--header-color-dark-mode);
+	padding-top: 7.18rem;
+	font-size: 2.2rem;
+	letter-spacing: -0.025em;
+	line-height: 1em;
+	letter-spacing: -0.19;
 }
 
 .cta {
-    color: var(--color-cta);
+	color: var(--color-cta);
 }
 
 .container--description {
-    padding-top: 1rem;
-    color: var(--color-medium-grey);
-    font-family: 'Inter', sans-serif;
+	padding-top: 1rem;
+	color: var(--color-medium-grey);
+	font-family: 'Inter', sans-serif;
 }
 
 .controls--button {
-    margin-top: 3.18rem;
-    margin-bottom: 1.4rem;
-    background-color: var(--color-button);
-    padding: 9px 17px 9px 15px;
-    width: 11.93rem;
-    height: 2.62rem;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
+	margin-top: 3.18rem;
+	margin-bottom: 1.4rem;
+	background-color: var(--color-button);
+	padding: 9px 17px 9px 15px;
+	width: 11.93rem;
+	height: 2.62rem;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
 }
 
 .controls--line {
-    width: 28rem;
-    height: 0px;
-    border: 1px solid #2F3E53;
+	width: 28rem;
+	height: 0px;
+	border: 1px solid #2F3E53;
 }
 
 .controls--input {
-    margin-top: 2.19rem;
-    margin-bottom: 7.18rem;
-    width: 13.20rem;
-    height: 2.44rem;
-    padding: 0.56rem 1.06rem 0.56rem 0.56rem;
-    border-radius: 0.38rem;
-    border: none;
-    background-color: #273549;
-    text-align: center;
-    color: #55F991;
-    font-family: 'Inter', sans-serif;
+	margin-top: 2.19rem;
+	margin-bottom: 7.18rem;
+	width: 13.20rem;
+	height: 2.44rem;
+	padding: 0.56rem 1.06rem 0.56rem 0.56rem;
+	border-radius: 0.38rem;
+	border: none;
+	background-color: #273549;
+	text-align: center;
+	color: #55F991;
+	font-family: 'Inter', sans-serif;
 }
 
 .controls--input:focus {
-    outline: 1px solid var(--color-button);
+	outline: 1px solid var(--color-button);
 }
 
-.output-container { 
-    padding: none;
-    display: flex;
-    flex-direction: row;
-    width: 27.88rem;
-    gap: 1.5rem;
+.output-container {
+	padding: none;
+	display: flex;
+	flex-direction: row;
+	width: 27.88rem;
+	gap: 1.5rem;
 }
 
 .button-input-container {
-    flex-direction: row;
-    padding: 0;
+	flex-direction: row;
+	padding: 0;
 }
 
 .controls--button-input {
-    position: absolute;
-    z-index: 2;
-    border-radius: 0 0.38rem 0.38rem 0;
-    padding: 0 8px 0 8px;
-    transform: translate(-2rem, 4.6ex);
-    height: 2.44rem;
-    border: none;
-    background-color: var(--color-button);
-    cursor: pointer;
+	position: absolute;
+	z-index: 2;
+	border-radius: 0 0.38rem 0.38rem 0;
+	padding: 0 8px 0 8px;
+	transform: translate(-2rem, 4.6ex);
+	height: 2.44rem;
+	border: none;
+	background-color: var(--color-button);
+	cursor: pointer;
 }
 
 .options--container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.4rem;
-    gap: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1.4rem;
+	gap: 1.2rem;
 }
 
 .checkbox-controller {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    line-height: 1.1;
-    display: grid;
-    grid-template-columns: 1em auto;
-    gap: 0.5em;
-    color: var(--color-medium-grey);
+	font-family: 'Inter', sans-serif;
+	font-size: 1rem;
+	line-height: 1.1;
+	display: grid;
+	grid-template-columns: 1em auto;
+	gap: 0.5em;
+	color: var(--color-medium-grey);
 }
 
 input[type="checkbox"] {
-    cursor: pointer;
-    border-radius: 2px;
-    appearance: none;
-    background-color: #2F3E53;
-    margin: 0;
-    font: inherit;
-    color: var(--color-medium-grey);
-    width: 1.15em;
-    border: 0.15em solid var(--color-medium-grey);
-    display: grid;
-    place-content: center;
-    border: none;
+	cursor: pointer;
+	border-radius: 2px;
+	appearance: none;
+	background-color: #2F3E53;
+	margin: 0;
+	font: inherit;
+	color: var(--color-medium-grey);
+	width: 1.15em;
+	border: 0.15em solid var(--color-medium-grey);
+	display: grid;
+	place-content: center;
+	border: none;
 }
 
 input[type="checkbox"]::before {
-    content: "";
-    width: 0.45em;
-    height: 0.45em;
-    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-    transform: scale(0);
-    transform-origin: bottom left;
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--form-control-color);
-    background-color: var(--color-button);
+	content: "";
+	width: 0.45em;
+	height: 0.45em;
+	clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+	transform: scale(0);
+	transform-origin: bottom left;
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1em 1em var(--form-control-color);
+	background-color: var(--color-button);
 }
 
 input[type="checkbox"]:checked {
-    background-color: var(--color-cta);
+	background-color: var(--color-cta);
 }
 
 .controls--slider {
-    -webkit-appearance: none;
-    appearance: none;
-    background: transparent;
-    cursor: pointer;
-    width: 26rem;
+	-webkit-appearance: none;
+	appearance: none;
+	background: transparent;
+	cursor: pointer;
+	width: 26rem;
 }
 
 .controls--slider:hover {
-    opacity: 1;
+	opacity: 1;
 }
 
 .controls--slider::-webkit-slider-runnable-track {
-    background: var(--background-color);
-    height: 0.5rem;
-    border-radius: 2px;
-  }
-  
-  /******** Firefox ********/
+	background: var(--background-color);
+	height: 0.5rem;
+	border-radius: 2px;
+}
+
+/******** Firefox ********/
 .controls--slider::-moz-range-track {
-    background: var(--background-color);
-    height: 0.5rem;
-    border-radius: 2px;
-  }
+	background: var(--background-color);
+	height: 0.5rem;
+	border-radius: 2px;
+}
 
 .controls--slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    margin-top: -12px; /* Centers thumb on the track */
-    background-color: var(--color-button);
-    height: 2rem;
-    width: 1rem;    
-    border-radius: 2px;
- }
+	-webkit-appearance: none;
+	/* Override default look */
+	appearance: none;
+	margin-top: -12px;
+	/* Centers thumb on the track */
+	background-color: var(--color-button);
+	height: 2rem;
+	width: 1rem;
+	border-radius: 2px;
+}
 
 .controls--slider::-moz-range-thumb {
-    border: none; /*Removes extra border that FF applies*/
-    border-radius: 0; /*Removes default border-radius that FF applies*/
-    background-color: var(--color-button);
-    height: 2rem;
-    width: 1rem;
-    border-radius: 2px;
+	border: none;
+	/*Removes extra border that FF applies*/
+	border-radius: 0;
+	/*Removes default border-radius that FF applies*/
+	background-color: var(--color-button);
+	height: 2rem;
+	width: 1rem;
+	border-radius: 2px;
 }
 
 .range-p {
-    color: var(--color-medium-grey);
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    padding-top: 1.4rem;
+	color: var(--color-medium-grey);
+	font-family: 'Inter', sans-serif;
+	text-align: center;
+	padding-top: 1.4rem;
 }
