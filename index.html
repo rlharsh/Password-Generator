@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@400;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2c711007c8.js" crossorigin="anonymous"></script>
+    <title>PandaWeb Password Generator</title>
+</head>
+<body>
+    <div id='password-container' class='container'>
+
+        <!-- Begin Header -->
+        <div id='header' class='container--header'>
+            <h1 class='container--h1'>Generate a <br/><span class='cta'>random password</span></h1>
+            <p class='container--description'>Never use an insecure password again.</p>
+        </div>
+
+        <div id='controls-container' class='controls--container'>
+            <button class="controls--button" onclick="getRandomPassword()">Generate passwords</button>
+            <div class="controls--line"></div>
+
+            <div id="options-container" class="options--container">
+                <label class="checkbox-controller">
+                    <input type="checkbox" id="options-allow-symbols" class="controls--checkbox" checked="true">Allow Symbols (i.e. !#%^&*)</span>
+                </label>
+                <label class="checkbox-controller">
+                    <input type="checkbox" id="options-allow-numbers" class="controls--checkbox">Allow Numbers (i.e. 1,2,3,4...)</span>
+                </label>
+                <div class="slide-container">
+                    <input type="range" min="6" max="32" value="12" class="controls--slider" id="options-range">
+                    <p id="range-description" class="range-p">Password Length: 12</p>
+                </div>
+            </div>
+            <div class="controls--line"></div>
+
+            <div class="output-container">
+                <div class="button-input-container">
+                    <input id="password-container-one" class="controls--input" type="text">
+                    <button id="copy-password-one" class="controls--button-input" title="Click to copy password." onclick="copyPasswordOne()"><i class="fa-regular fa-copy"></i></button>
+                </div>
+                <div classd="button-input-container">
+                    <input id="password-container-two" class="controls--input" type="text">
+                    <button id="copy-password-two" class="controls--button-input" title="Click to copy password."><i class="fa-regular fa-copy"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./generator.js"></script>
+</body>
+</html>
